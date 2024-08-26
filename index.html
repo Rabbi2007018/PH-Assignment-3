@@ -14,9 +14,11 @@
           colors: {
             clifford: '#da373d',
             button: '#ABEF5F',
-          }
-        }
-      }
+          },
+          'backgroundImage':"url('.')"
+         
+        },
+      },
     }
   </script>
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -53,18 +55,28 @@
                     <li><a class="text-gray-500">Contact Us</a></li>
                   </ul>
                 </div>
-                <div class="navbar-end  gap-5  ">
-                   <div class="hidden md:block ">
-                    <div class="bg-white rounded-full size-6  text-center">
-                      <i class="fa-duotone fa-solid fa-magnifying-glass fa-sm text-gray-500  " style="--fa-primary-color: #dbdee3; --fa-secondary-color: #a5acb9;"></i>
-                     </div>
-                     <div class="bg-white rounded-full size-6 text-center">
-                      <i class="fa-solid fa-cart-shopping  text-gray-500 "></i>
-                     </div>
-                     <button class=" bg-button font-extrabold px-5 py-3 rounded-3xl  gap-5 ">Book Consult  <i class="fa-solid fa-arrow-right text-lime-400 p-0 size-6 -rotate-45 text-xl bg-black rounded-full  text-center "></i>
-                     </button>
-                   </div>
-                  
+                <div class="navbar-end">
+                  <div class="hidden md:block">
+                    <button class="btn btn-circle bg-white mr-2">
+                      <i
+                        class="fa-solid fa-magnifying-glass text-gray-500 text-2xl"
+                      ></i>
+                    </button>
+                    <button class="btn bg-white btn-circle mr-2">
+                      <div class="indicator">
+                        <i
+                          class="fa-solid fa-cart-shopping text-gray-500 text-2xl"
+                        ></i>
+                      </div>
+                    </button>
+      
+                    <button class="btn bg-button rounded-3xl font-bold">
+                      Book Consult
+                      <i
+                        class="fa-solid fa-arrow-right -rotate-45 bg-black p-1.5 w-7 h-7 rounded-full text-white"
+                      ></i>
+                    </button>
+                  </div>
                 </div>
                 <div class="dropdown">
                     <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -189,9 +201,42 @@
         </div>
       </div>
      </section>
+     <hr class="mt-7 h-2 bg-white">
      <!-- mail section -->
-      <section class="">
-
+      <section >
+        <div
+  class="hero "style="background-image: url(./assets/bg.jpg);">
+  
+  <div class="hero-content text-neutral-content text-center ">
+    <div class="max-w-full mt-24">
+      <div class="w-3/4 mx-auto space-y-5">
+        <button class=" bg-[#bfe0b1] text-black font-bold text-xs p-2 rounded-3xl "><i class="fa-solid fa-arrow-right text-black  "></i>
+        Let’s Connect</button>
+      
+      <h1 class="mb-5 text-3xl lg:text-5xl text-black font-extrabold">Let’s Discuss Next Project</h1>
+      <p class="mb-5 text-xs lg:text-xl  text-gray-700  font-normal">
+        The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.
+      </p>
+      
+        <div class="grid lg:grid-cols-2 gap-5 ">
+          <input type="text" placeholder="first name*" class="rounded-full p-2 lg:w-full w-full">
+        <input type="text" placeholder="last name*" class="rounded-full p-2 lg:w-full w-full">
+      
+     
+        <input type="number" placeholder="phone number*" class="rounded-full p-2 lg:w-full w-full">
+        <input type="email" placeholder="e-mail address*" class="rounded-full p-2 lg:w-full w-full">
+        
+        </div>
+        <input type="text" placeholder="Write your message here " class="rounded-xl p-4 lg:w-full w-full  h-44  ">
+        <button class="btn bg-button rounded-3xl font-bold w-full">
+          Send Mail
+          <i
+            class="fa-solid fa-arrow-right -rotate-45 bg-black p-1.5 w-7 h-7 rounded-full text-white"
+          ></i>
+        </button>
+    </div>
+  </div>
+</div>
       </section>
 
   </main>
