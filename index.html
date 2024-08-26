@@ -37,7 +37,7 @@
       <!-- nav section -->
       <section class="  bg-gray-100">
         <nav>
-            <div class="navbar bg-base-100 w-11/12 mx-auto   bg-gray-100">
+            <div class="navbar bg-base-100 w-11/12 mx-auto   bg-gray-100  relative">
                 <div class="navbar-start my-5 gap-3">
                     <div class="bg-button rounded-full size-6 text-center ">
                         <i class="fa-solid fa-arrow-right  -rotate-45 text-xl  "></i>
@@ -54,14 +54,16 @@
                   </ul>
                 </div>
                 <div class="navbar-end  gap-5  ">
-                   <div class="bg-white rounded-full size-6  text-center">
-                    <i class="fa-duotone fa-solid fa-magnifying-glass fa-sm text-gray-500  " style="--fa-primary-color: #dbdee3; --fa-secondary-color: #a5acb9;"></i>
+                   <div class="hidden md:block ">
+                    <div class="bg-white rounded-full size-6  text-center">
+                      <i class="fa-duotone fa-solid fa-magnifying-glass fa-sm text-gray-500  " style="--fa-primary-color: #dbdee3; --fa-secondary-color: #a5acb9;"></i>
+                     </div>
+                     <div class="bg-white rounded-full size-6 text-center">
+                      <i class="fa-solid fa-cart-shopping  text-gray-500 "></i>
+                     </div>
+                     <button class=" bg-button font-extrabold px-5 py-3 rounded-3xl  gap-5 ">Book Consult  <i class="fa-solid fa-arrow-right text-lime-400 p-0 size-6 -rotate-45 text-xl bg-black rounded-full  text-center "></i>
+                     </button>
                    </div>
-                   <div class="bg-white rounded-full size-6 text-center">
-                    <i class="fa-solid fa-cart-shopping  text-gray-500 "></i>
-                   </div>
-                   <button class=" bg-button font-extrabold px-5 py-3 rounded-3xl  gap-5 ">Book Consult  <i class="fa-solid fa-arrow-right text-lime-400 p-0 size-6 -rotate-45 text-xl bg-black rounded-full  text-center "></i>
-                   </button>
                   
                 </div>
                 <div class="dropdown">
@@ -81,7 +83,7 @@
                     </div>
                     <ul
                       tabindex="0"
-                      class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                      class="menu menu-sm dropdown-content  rounded-box z-[1] mt-3 justify-start border-2 bg-base-100 left-3 shadow -ml-20 absolute">
                       <<li><a class="font-extrabold">Home</a></li>
                     <li><a class="text-gray-500">Services</a></li>
                     <li><a class="text-gray-500">Portfolio</a></li>
@@ -95,12 +97,12 @@
         <!-- banner -->
          <div class=" flex flex-col gap-8  bg-gradient-to-t bg-gray-100 from-white">
             <div class="flex-1  "> 
-                <img class="mx-auto w-1/3"  src="./assets/banner.png" alt="">
+                <img class="mx-auto lg:w-1/3 p-10"  src="./assets/banner.png" alt="">
             </div>
             <div class="flex-1    ">
-                <div class="space-y-10" >
-                    <h1 class="text-center text-6xl font-extrabold">A barn house of this design has a <br>striking appearance</h1>
-                    <p class="text-center text-xm">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal <br> accents, and large windows that flood the space with natural light.</p>
+                <div class="space-y-10 p-4" >
+                    <h1 class="text-center text-4xl lg:text-6xl font-extrabold">A barn house of this design has a <br>striking appearance</h1>
+                    <p class="text-center  text-xm">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal <br> accents, and large windows that flood the space with natural light.</p>
                     <div class=" text-center">
                         <button class=" btn bg-[#caf39c] border-lime-300 font-bold text-lg px-5 py-3 rounded-3xl ">View Detail <i class="fa-solid fa-arrow-right text-black  p-0 size-6 -rotate-45 text-xl bg-lime-500 rounded-full  text-center "></i></button>
                     </div>
@@ -109,6 +111,64 @@
          </div>
     </section>
   </header>
+  <main class="bg-gray-100">
+    <!-- about section -->
+    <section class="w-11/12 mx-auto py-12 lg:py-36">
+      <div class=" hidden lg:block  ml-10" >
+        <img class=""  src="./assets/Vector.png" alt="">
+      </div>
+      <div class="lg:flex w-4/5 mx-auto lg:gap-3 space-y-6 relative">
+        <!-- text -->
+        <div class="space-y-4 flex flex-col text-center lg:text-justify">
+          <div><button class=" bg-[#ffffff] text-xs p-2 rounded-3xl "><i class="fa-solid fa-arrow-right text-black  "></i>
+            About Us </button>
+          </button></div>
+          <h1 class="text-4xl font-bold">We design thoughtful, liveable spaces</h1>
+          <p class="text-sm text-gray-500">The barn house captivates with its blend of rustic charm and 
+            modern sophistication, featuring weathered wood, sleek metal accents.</p>
+            <div>
+              <div class="flex justify-start items-center gap-4 bg-white p-4 rounded-xl">
+                <img src="./assets/commercial.png" alt="">
+                <div class="space-y-3">
+                  <h1 class="font-bold text-sm">Commercial</h1>
+                  <p class="text-xs text-gray-500">The barn house captivates with its blend of rustic charm and modern.</p>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="flex justify-start items-center gap-4 bg-white p-4 rounded-xl">
+                <img src="./assets/residential.png" alt="">
+                <div class="space-y-3">
+                  <h1 class="font-bold text-sm">Residential</h1>
+                  <p class="text-xs text-gray-500">The barn house captivates with its blend of rustic charm and modern.</p>
+                </div>
+              </div>
+            </div>
+           
+        </div>
+        <!-- image -->
+        <div>
+          <img src="./assets/Rectangle.png" alt="">
+        </div>
+      </div>
+     
+
+    </section>
+    <!-- work section -->
+     <section>
+      <div class="w-3/4 mx-auto  ">
+        <div class="flex flex-col justify-center items-center space-y-4">
+          <div><button class=" bg-[#ffffff] text-xs p-2 rounded-3xl "><i class="fa-solid fa-arrow-right text-black  "></i>
+            How we works </button>
+        </button></div>
+        <h1 class="text-4xl font-bold">Our Works Process</h1>
+        <p class="text-center text-sm text-gray-500">The barn house captivates with its blend of rustic charm and modern sophistication, <br> featuring weathered wood, sleek metal accents.</p>
+      </div>
+        <div></div>
+      </div>
+     </section>
+
+  </main>
     
 </body>
 </html>
